@@ -1,5 +1,6 @@
-from flask import Blueprint, render_template, redirect, request
-from ..models import Recipe
+from flask import Blueprint, render_template, redirect, request, url_for, flash
+from ..models import Recipe, Message
+from ..extensions import db
 
 import os
 
@@ -70,3 +71,20 @@ def success():
 @main.route('/cancel', methods=['GET', 'POST'])
 def cancel():
     return render_template('product/cancel.html')
+
+@main.route('/about/', methods=['POST'])
+def contact_messages():
+    name = request.form.get('name')
+    email = request.form.get('email')
+    message = request.form.get('message')
+
+    new_message = Message(
+        name = name,
+        email = email,
+        message = message
+    )
+    db.session.add(new_message)
+    db.session.commit()
+
+    flash('Your message has been sent.','success')
+    return redirect(url_for('main.index'))

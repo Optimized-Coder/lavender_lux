@@ -3,7 +3,7 @@ from flask_admin import Admin
 from flask_admin.contrib.sqla import ModelView
 
 from .extensions import db, migrate
-from .models import Recipe
+from .models import Recipe, Message
 
 import os
 
