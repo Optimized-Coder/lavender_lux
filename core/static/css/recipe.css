@@ -1,0 +1,28 @@
+.recipe-section {
+    padding: 2rem 0;
+}
+
+.recipe-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    border: 1px solid var(--primary-color);
+    margin: 0 0 2rem 0;
+}
+
+.recipe-card-r {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    padding: 0 3rem;
+}
+
+.recipe-card-r p {
+    padding: 1rem 0;
+}
+
+/* .recipe-title {
+    margin-bottom: 2rem;
+} */

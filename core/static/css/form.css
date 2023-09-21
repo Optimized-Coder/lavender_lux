@@ -1,0 +1,13 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}

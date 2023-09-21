@@ -1,0 +1,158 @@
+@import url(./header.css);
+@import url(./footer.css);
+@import url(./recipe.css);
+@import url(./form.css);
+@import url(./product.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-main);
+}
+
+:root {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+
+    --primary-color: #8B6B99; /* lavender purple */
+    --background-main: rgb(255, 255, 255); 
+    --secondary-a: #B0B0B0; /* silver grey */
+    --info: #3A325D; /* deep indigo */
+    --accent: #E9D6A8; /* pale gold */
+    --error: #6e0000; /* red */
+    --success: #006400; /* green */
+}
+
+/* COMPONENTS */
+
+.container {
+    width: 100%;
+    padding: 1rem 0rem;
+    min-height: 84.5vh;
+}
+
+.container-slim {
+    width: 100%;
+    padding: 1rem 6rem;
+}
+
+.container-about {
+    width: 100%;
+    padding: 1rem 6rem;
+    min-height: 84vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.container div {
+    padding: 1rem 5rem;
+}
+
+.banner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+    background-image: url(../images/cocktail_girl_7.png);
+    background-position: 10% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 1rem;
+}
+
+.hero-container, .about-home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3rem 5rem;
+    min-height: 30vh;
+
+    color: black;
+}
+
+.hero-l img, .about-r img {
+    width: 350px;
+    border-radius: 1rem;
+}
+
+.hero-r, .about-l {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0rem 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    padding: .5rem 0;
+}
+
+.info-contrast, info-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-contrast {
+    background-color: #e0e0e0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.hero-cta {
+    display: flex;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+.hero-cta:hover {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.hero-cta a {
+    text-decoration: none;
+    padding: 1rem 2rem 0 0;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.center-title {
+    text-align: center;
+}

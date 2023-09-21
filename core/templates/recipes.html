@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-slim">
+    <h2>
+        View Some Inspiration
+    </h2>
+    <div class="recipe-section">
+        {% for recipe in recipes %}
+    <div class="recipe-card">
+        <div class="recipe-card-l">
+            <img src="{{ recipe.img_url }}" alt="{{ recipe.title }}" height="350px" width="350px">
+        </div>
+        <div class="recipe-card-r">
+            <h2 class="recipe-title">{{ recipe.title }}</h2>
+            <p>{{ recipe.description }}</p>
+            <a href="/">View Recipe</a>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}

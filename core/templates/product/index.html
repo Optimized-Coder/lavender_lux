@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container product-container">
+    <div class="product-centered">
+        <div class="product-title">
+            <h2>
+                Lavender Lux &trade; Cordial
+            </h2>
+        </div>
+        <div class="product-img">
+            <img src="{{url_for('static', filename='images/lux_logo_1.png')}}" alt="Lavender Lux&trade; Cordial">
+        </div>
+        <div class="product-price">
+            <h3>
+                £7.50
+            </h3>
+        </div>
+    </div>
+    <div class="product-buttons">
+        <form action="/create-checkout-session" method="POST">
+            <input type="number" name="quantity" placeholder="Quantity">
+            <input type="submit" value="Buy Now">
+        </form>
+    </div>
+    <!-- <div class="product-description">
+        <h2>A Symphony of Luxury</h2>
+        <p>At Lavender lux, we believe that true luxury lies in the details. Our Lavender Cordial is a testament to this philosophy. Handpicked from the finest organic lavender blooms, each bottle encapsulates the essence of indulgence. With a delicate blend of sugar and the soothing embrace of lavender, each sip is a symphony of luxury, where taste and elegance harmoniously intertwine.</p>
+
+        <h2>Lavender's Embrace</h2>
+        <p>Lavender, revered for centuries, isn't just a flavor; it's a holistic experience. Beyond its exquisite taste, lavender offers a myriad of health and mental benefits. Known for its calming properties, lavender can soothe your senses and transport you to a realm of tranquility. With Lavender lux, we invite you to unwind and rejuvenate with every sip.</p>
+
+        <p>Savor the mental clarity and relaxation that lavender brings while you enjoy the sweet serenity of our cordial. Elevate your cocktail experience with the assurance that you're not only indulging in luxury but also nurturing your well-being.</p>
+
+        <h2>Craft Your Moments</h2>
+        <p>Unleash your creativity with Lavender lux. Craft lavender-infused masterpieces that tantalize your taste buds and soothe your soul. Whether you're mixing classic cocktails or forging new paths in mixology, our cordial offers endless possibilities for your palate and your well-being.</p>
+
+        <p>Elevate your elegance and nurture your senses with Lavender lux Lavender Cordial. It's more than a drink; it's an invitation to a world where luxury, health, and well-being intertwine harmoniously. Experience the symphony of opulence and tranquility in every bottle.</p>
+        <p><em>Indulge. Relax. Thrive.</em></p>
+    </div> -->
+</div>
+{% endblock %}

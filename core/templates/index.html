@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="banner-img"></div>
+        <div class="hero-container">
+            <div class="hero-l">
+                <img src="{{ url_for('static', filename='./images/cocktail_girl_8.png') }}" alt="">
+            </div>
+            <div class="hero-r">
+                <h2>
+                    Elevate Your Cocktail Experience 
+                </h2>
+                <p>
+                    At Lavender lux, we're redefining the art of mixology. Our handcrafted lavender cordial, crafted from the finest organic lavender, offers a taste of luxury for those who appreciate the finer things in life. It's the perfect complement to your passion for unforgettable cocktails.
+                </p>
+                <section class="hero-cta">
+                    <a href="#about" class="cta-btn cta-btn--hero">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </section>
+            </div>
+        </div>
+        <div class="about-home">
+            <div class="about-l">
+                <h2>
+                    The Lavender Difference
+                </h2>
+                <p>
+                    Our commitment to quality goes beyond the ordinary. While we pride ourselves on using vegan-friendly, GMO-free, and organic lavender, we know that true luxury lies in the details. That's why we've created a cordial that's as vibrant and dynamic as you are.
+                </p>
+                <section class="hero-cta">
+                    <a href="#about" class="cta-btn cta-btn--hero">
+                        Visit Our Store <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </section>
+            </div>
+                <div class="about-r">
+                    <img src="{{ url_for('static', filename='./images/cocktail_girl_9.png') }}" alt="">
+                </div>
+            </div>
+            <div class="info-contrast">
+                <div class="title">
+                    <h2>
+                        Indulge in Lavender lux
+                    </h2>
+                </div>
+                <div class="content">
+                    <p>
+                        🍸 Crafted for Outgoing Millennials: We understand your taste for adventure and style. Our cordial adds a touch of sophistication to your cocktail creations.
+                    </p> 
+                    <p>
+                        🌿 Organic Excellence: Sourced from pristine lavender fields, our organic lavender ensures a premium taste that's as pure as your passion for quality. 
+                    </p>
+                    <p>
+                        🌎 Sustainable Sipping: As sustainability advocates, we embrace eco-friendly practices, making your choice both elegant and responsible. 
+                    </p>
+                    <p>
+                        🥂 Elevate Every Occasion: From rooftop soirées to intimate gatherings, Lavender lux is the secret ingredient that transforms every moment into a celebration. 
+                    </p>
+                </div>
+            </div>
+            <!-- <div class="info-home">
+                <div class="title">
+                    <h3>
+                        Crafting Artful Cocktails:
+                    </h3>
+                </div>
+                <div class="content">
+                    <p>
+                        🍹 Mix, Mingle, and Create 🍹
+                    </p>
+                    <p>
+                        Unleash your inner mixologist with Lavender lux. We invite you to experiment, craft, and infuse your own signature cocktails. Elevate your creativity and make every sip an artful experience.
+                    </p>
+                </div> -->
+            </div>
+        </div>
+        <div class="about-home">
+            <div class="about-l">
+                <div class="title">
+                    <h3>
+                        Explore Our Collection
+                    </h3>
+                </div>
+                <div class="content">
+                    <p>
+                        Discover the enchanting world of Lavender lux and unlock endless possibilities for mixology. Whether you're a budding cocktail enthusiast or a seasoned pro, our cordial invites you to explore, experiment, and savor the art of taste.
+                    </p>
+                    <p>
+                        Shop Now to experience the essence of Lavender lux and add a touch of sophistication to your cocktail journey. Cheers to the art of crafting extraordinary cocktails.
+                    </p>
+                    <p>
+                        🌸 Sip, Savor, Repeat 🌸
+                    </p>
+                </div>
+            </div>
+            <div class="about-r">
+                <img src="{{ url_for('static', filename='./images/cocktail_6.png') }}" alt="" height="300px">
+            </div>
+        </div>
+    </div>
+{% endblock %}
